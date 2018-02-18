@@ -5,32 +5,16 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
-import './index.css'
-import './animations.css'
+import "../styles/animations.scss"
+import "../styles/main.scss"
+import "../styles/components/header.scss"
 
 const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
+  <div className="header">
+    <div>
+      <h1>
+        <Link to="/">
+          Gatsby Test
         </Link>
       </h1>
     </div>
@@ -65,12 +49,11 @@ const TemplateWrapper = ({ children, location }) => (
     <TransitionGroup>
       <CSSTransition
           key={location.pathname}
-          classNames="example"
+          classNames="transition"
           timeout={{ enter: 500, exit: 300 }}
       >
         <TransitionHandler
             location={location}
-
         >
         <div
           style={{
