@@ -2,10 +2,11 @@
   background-color: lightcyan;
 
   .carousel-slide {
+    display: block;
     background-color: coral;
     height: 100%;
     padding: 20px;
-    margin: 10px;
+    margin: 10px 5px;
 
     h1 {
       text-align: center;
