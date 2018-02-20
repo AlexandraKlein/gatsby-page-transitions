@@ -1,7 +1,14 @@
 .carousel {
-  border: 3px solid blue;
+  background-color: lightcyan;
 
   .carousel-slide {
     background-color: coral;
+    height: 100%;
+    padding: 20px;
+    margin: 10px;
+
+    h1 {
+      text-align: center;
+    }
   }
 }
