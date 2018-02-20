@@ -1,13 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import withRouter from 'react-router-dom/withRouter'
-import { TransitionGroup, CSSTransition } from 'react-transition-group'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
+import React from 'react';
+import PropTypes from 'prop-types';
+import withRouter from 'react-router-dom/withRouter';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import Link from 'gatsby-link';
+import Helmet from 'react-helmet';
 
-import "../styles/animations.scss"
-import "../styles/main.scss"
-import "../styles/components/header.scss"
+import '@/styles/animations.global';
+import '@/styles/base.global';
 
 const Header = () => (
   <div className="header">
@@ -19,7 +18,7 @@ const Header = () => (
       </h1>
     </div>
   </div>
-)
+);
 
 class TransitionHandler extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
@@ -56,7 +55,7 @@ const TemplateWrapper = ({ children, location }) => (
           location={location}
         >
           <div>
-            {children()}
+            { children() }
           </div>
         </TransitionHandler>
       </CSSTransition>
@@ -75,7 +74,8 @@ TransitionHandler.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string
   }),
-  children: PropTypes.func
+  // eslint-disable-next-line
+  children: PropTypes.object
 };
 
-export default withRouter(TemplateWrapper)
+export default withRouter(TemplateWrapper);

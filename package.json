@@ -8,6 +8,7 @@
     "gatsby-link": "^1.6.15",
     "gatsby-plugin-react-helmet": "^1.0.5",
     "gatsby-plugin-sass": "^1.0.17",
+    "nuka-carousel": "^3.0.1",
     "react-transition-group": "^2.2.0"
   },
   "keywords": [
@@ -35,6 +36,8 @@
     "postcss": "^6.0.19",
     "postcss-cli": "^5.0.0",
     "postcss-scss": "^1.0.3",
-    "prettier": "^1.6.1"
+    "prettier": "^1.6.1",
+    "react-slick": "^0.18.1",
+    "slick-carousel": "^1.8.1"
   }
 }
