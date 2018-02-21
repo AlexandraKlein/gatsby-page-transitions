@@ -8,9 +8,7 @@ const IndexPage = () => (
       buttonLink="/page-2"
       buttonText="Albert Is Cool"
     />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <h1>This is the Homepage</h1>
     <Link to="/page-2/">Go to page 2</Link>
   </div>
 );

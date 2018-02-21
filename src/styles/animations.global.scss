@@ -7,12 +7,12 @@
 }
 
 .transition-enter {
-  opacity: 0.01;
+  opacity: 0.05;
 }
 
 .transition-enter.transition-enter-active {
   opacity: 1;
-  transition: opacity 1s ease-in;
+  transition: opacity .5s ease-in;
 }
 
 .transition-exit {
@@ -20,6 +20,6 @@
 }
 
 .transition-exit.transition-exit-active {
-  opacity: 0.01;
-  transition: opacity 1s ease-in;
+  opacity: 0.05;
+  transition: opacity .5s ease-in;
 }

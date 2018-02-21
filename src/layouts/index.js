@@ -2,23 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import withRouter from 'react-router-dom/withRouter';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 
+import '@/styles/variables.global';
 import '@/styles/animations.global';
 import '@/styles/base.global';
-
-const Header = () => (
-  <div className="header">
-    <div>
-      <h1>
-        <Link to="/">
-          Gatsby Test
-        </Link>
-      </h1>
-    </div>
-  </div>
-);
 
 class TransitionHandler extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
@@ -44,12 +32,11 @@ const TemplateWrapper = ({ children, location }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header />
     <TransitionGroup>
       <CSSTransition
         key={location.pathname}
         classNames="transition"
-        timeout={{ enter: 1000, exit: 1000 }}
+        timeout={{ enter: 500, exit: 500 }}
       >
         <TransitionHandler
           location={location}

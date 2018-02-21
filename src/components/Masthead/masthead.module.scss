@@ -1,3 +1,11 @@
+@import '~@/styles/variables.global';
+
 .masthead {
-  background: lightblue;
+  background-color: $gunmetal;
+  width: 100%;
+  padding: 45px;
+
+  a {
+    color: $floral-white;
+  }
 }
