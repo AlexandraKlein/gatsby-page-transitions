@@ -15,7 +15,6 @@ class Carousel extends React.Component {
     console.log(e.currentTarget.textContent);
   }
   render() {
-    const Decorators = {}
     const settings = {
       wrapAround: true,
       width: '100vw',
