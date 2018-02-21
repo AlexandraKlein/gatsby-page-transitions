@@ -6,7 +6,7 @@ const IndexPage = () => (
   <div>
     <Masthead
       buttonLink="/page-2"
-      buttonText="Albert Is Cool"
+      buttonText="Header Text"
     />
     <h1>This is the Homepage</h1>
     <Link to="/page-2/">Go to page 2</Link>

@@ -9,7 +9,7 @@ class SecondPage extends React.Component {
       <div>
         <Masthead
           buttonLink="/"
-          buttonText="Albert Is Cool"
+          buttonText="Header Text"
         />
         <h1>This is a 2nd page</h1>
         <Carousel />

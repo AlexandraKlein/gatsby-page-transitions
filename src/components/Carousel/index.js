@@ -10,12 +10,12 @@ class Carousel extends React.Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
   }
-
   handleClick(e) {
     e.preventDefault();
     console.log(e.currentTarget.textContent);
   }
   render() {
+    const Decorators = {}
     const settings = {
       wrapAround: true,
       width: '100vw',
