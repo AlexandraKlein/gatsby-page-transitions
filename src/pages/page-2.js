@@ -8,12 +8,17 @@ class SecondPage extends React.Component {
     return (
       <div>
         <Masthead
+          className="btn"
           buttonLink="/"
           buttonText="Header Text"
         />
         <h1>This is a 2nd page</h1>
         <Carousel />
-        <Link to="/">Go back to the homepage</Link>
+        <Link
+          to="/"
+          className="btn orange"
+        >Go back to the homepage
+        </Link>
       </div>
     );
   }

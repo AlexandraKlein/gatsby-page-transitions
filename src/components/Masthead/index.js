@@ -7,6 +7,7 @@ import styles from './masthead.module';
 const Masthead = (props) => (
   <div className={styles['masthead']}>
     <Link
+      className="btn"
       to={props.buttonLink}
     >
       {props.buttonText}
